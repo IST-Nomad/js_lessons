@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // 1. Создать объект, который описывает ширину и высоту
 // прямоугольника, а также может посчитать площадь фигуры:
 // const rectangle = {width:..., height:..., getSquare:...};
@@ -106,3 +107,10 @@ const detail = {
 };
 detail.sum();
 console.log(detail.sum2);
+=======
+function getThis() {
+  console.log(this);
+}
+getThis();
+console.log(window.getThis);
+>>>>>>> Stashed changes
