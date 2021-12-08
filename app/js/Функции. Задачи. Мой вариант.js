@@ -11,12 +11,15 @@ function reverseString(str) {
 
 function getCodeStringFromText(str) {
   let b = "";
+  str = String(str);
   for (let i = 0; i < str.length; i++) {
     let a = str.charCodeAt(i);
-    b = b + " " + a;
+    b += a + " ";
   }
-  return b;
+  return b.trim();
 }
+
+console.log(getCodeStringFromText(null));
 
 function guessingNumber(num) {
   if (num > 0 || num < 10) {
