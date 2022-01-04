@@ -148,7 +148,7 @@ const isNull = secondArr.some(el => el == 0);
 
 const thirdArr = ['yes', 'hello', 'no', 'easycode', 'what'];
 const isLength = thirdArr.every(name => name.length >= 3);
-console.log(isLength);
+// console.log(isLength);
 
 // 4. Дан массив объектов, где каждый объект содержит информацию о букве и месте её положения в строке {буква: “a”, позиция_в_предложении: 1}:
 
@@ -159,3 +159,16 @@ console.log(isLength);
 // Напишите функцию, которая из элементов массива соберет и вернёт
 // строку, основываясь на index каждой буквы. Например:
 // [{char:"H",index:0}, {char:"i",index: 1}, {char:"!",index:2}] → “Hi!”
+
+const fourthArr = [{char:"a",index:12}, {char:"w",index:8}, {char:"Y",index:10}, {char:"p",index:3}, {char:"p",index:2},
+{char:"N",index:6}, {char:" ",index:5}, {char:"y",index:4}, {char:"r",index:13}, {char:"H",index:0},
+{char:"e",index:11}, {char:"a",index:1}, {char:" ",index:9}, {char:"!",index:14}, {char:"e",index:7}];
+
+// const sortArr = [10, 7, 44, 32];
+// numArr.sort((prev, next) => prev - next);
+const stringArr = fourthArr.sort((prev, next) => prev.index - next.index).reduce(function(result, fourthArr) {
+  result += fourthArr.char;
+  return result;
+}, '');
+console.log(fourthArr);
+console.log(stringArr);
