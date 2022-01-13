@@ -24,7 +24,7 @@ const organisation = {
 
 name: 'Google',
 
-info: { employees: [‘Vlad’, ‘Olga’], partners: ['Microsoft', 'Facebook', 'Xing'] }
+info: { employees: ['Vlad', 'Olga'], partners: ['Microsoft', 'Facebook', 'Xing'] }
 
 };
 
